@@ -127,3 +127,10 @@ impl Figure {
         self
     }
 }
+
+// Game_varriables
+pub struct GameVarriables{
+    pub figure: Figure,
+    pub arr   : OutputArr,
+    pub score : i32,
+}
