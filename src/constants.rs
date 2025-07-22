@@ -1,36 +1,17 @@
 pub const NAME:           &str = "TETRIS";// "TETRIS"
-pub const NAME_LEN:      usize = 6;// 6
-pub const NAME_DECORATOR: &str = "~";// "-"
 
-pub const SCORE_INITIAL_VALUE:   i32 = 0;//0
-pub const SCORE_ADDITIONAL_VALUE:i32 = 1;//1
-pub const HEIGHT: usize = 20;//20
-pub const WIDTH:  usize = 10;//10
-pub const DELAY:    u64 = 1000; //ms(1000)
+use macroquad::color::*;
+pub const BACKGROUND_COLOR:Color = BLACK;
+pub const BLOCK_COLOR:     Color = WHITE;
 
-
-pub const SYMBOL_0: char = ' ';//' '
-pub const SYMBOL_1: char = '@';//'@'
-
-pub const HORIZONTAL_SYMBOL: char = '═';//'_'
-pub const VERTICAL_SYMBOL:   char = '║';//'|'
-
-pub const LEFT_UP_SYMBOL:    char = '╔';//'╔'
-pub const RIGHT_UP_SYMBOL:   char = '╗';//'╗'
-pub const LEFT_DOWN_SYMBOL:  char = '╚';//'╚'
-pub const RIGHT_DOWN_SYMBOL: char = '╝';//'╝'
-
+pub const SCORE_INITIAL_VALUE:    i32 = 0;//0
+pub const SCORE_ADDITIONAL_VALUE :i32 = 1;//1
+pub const HEIGHT:               usize = 20;//20
+pub const WIDTH:                usize = 10;//10
+pub const PIXELS_IN_BLOCK:       u32 = 20;//20
+pub const DELAY:                  u64 = 1000; //ms(1000)
 
 pub const GAME_OVER_DELAY:    u64 = 1000; //ms(1000)
-pub const GAME_OVER_TEXT: &str = "\
-\n\n\n\n\n\n
-╔═══╗         ╔═══╗
-║╔═╗║         ║╔═╗║
-║║ ╚╬══╦══╦══╗║║ ║╠╗╔╦══╦═╗
-║║═╗║╔╗║║║║ ═╣║║ ║║╚╝║ ═╣╔╝
-║╚═╝║╔╗║║║║ ═╣║╚═╝╠╗╔╣ ═╣║
-╚═══╩╝╚╩╩╩╩══╝╚═══╝╚╝╚══╩╝
-\n\n\n\n\n\n\n";
 
 
 // Системные константы( НЕ ИЗМЕНЯТЬ )

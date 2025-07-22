@@ -55,7 +55,7 @@ impl RotateState {
 }
 
 // Figure
-type OutputArr = [[bool; constants::WIDTH]; constants::HEIGHT];
+pub type OutputArr = [[bool; constants::WIDTH]; constants::HEIGHT];
 #[derive(Copy, Clone)]
 pub struct Figure {
     pub main_point: Point,
@@ -130,7 +130,7 @@ impl Figure {
 
 // Game_varriables
 pub struct GameVarriables{
-    pub figure: Figure,
-    pub arr   : OutputArr,
-    pub score : i32,
+    pub figure:     Figure,
+    pub output_arr: OutputArr,
+    pub score :     i32,
 }
